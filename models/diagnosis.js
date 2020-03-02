@@ -10,7 +10,7 @@ const diagnosisSchema = new Schema({
     type: Date,              
     required: true          
   },
-  DDXData: {
+  DDX_Data: {
     type: Array,              
     required: true          
   },
@@ -24,6 +24,6 @@ const diagnosisSchema = new Schema({
   },
 })
 
-module.exports = mongoose.model('disease', diagnosisSchema)
+module.exports = mongoose.model('diagnosis', diagnosisSchema)
 
 
