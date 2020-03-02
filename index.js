@@ -6,7 +6,7 @@ const bodyParser = require('body-parser')
 const session = require('express-session')
 const passport = require('passport')
 
-mongoose.connect('mongodb://localhost/diagnosis',{ useNewUrlParser: true,useUnifiedTopology: true })   // 設定連線到 mongoDB
+mongoose.connect('mongodb://localhost/student',{ useNewUrlParser: true,useUnifiedTopology: true })   // 設定連線到 mongoDB
 
 const db = mongoose.connection
 
@@ -40,8 +40,8 @@ app.use((req, res, next) => {
 
 
 app.use('/user', require('./routes/user'))
-app.use('/state', require('./routes/state'))
-app.use('/diagnosis', require('./routes/diagnosis'))
+app.use('/student', require('./routes/student'))
+
 
 app.get('/',(req,res)=>{
   res.send('登陸成功')

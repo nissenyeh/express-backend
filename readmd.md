@@ -1,19 +1,21 @@
 # README
 
-# 環境設定
+- 本程式包含簡單的登入/註冊/登出以及簡單的「學生」資料操作
 
-- server要安裝nvm以切換node版本
-- 安裝nodejs
-- 安裝nodemonjs 用來快速變化
-- 用kill port去刪除佔用的port
 
-# 套件
+## 啟用server
 
-- npm install body-parser
-- npm install mongoose
-- npm install kill-port --save-dev  去kill port
-- npm install nodemon
-- npm install express-session
-- npm install passport passport-local
+```
+npm install
+npm run serve
+```
 
->https://stackoverflow.com/questions/46306871/port-already-in-use-after-each-server-restart/59764941#59764941
+## Package
+
+- body-parser:解析request
+- mongoose:操作DB
+- nodemon:即時更動JS檔案
+- kill-port:刪掉nodemon時常佔用port問題
+- express-session:session
+- passport passport-local:登入驗證使用
+
